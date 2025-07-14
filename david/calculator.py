@@ -19,7 +19,7 @@ def divide(a, b):
 # 메인 실행 블록
 if __name__ == "__main__":
     try:
-        # 사용자로부터 두 개의 숫자 입력 받기
+        # 두 개의 숫자 입력 받기
         a = int(input("Enter the first number: "))
         b = int(input("Enter the second number: "))
         
