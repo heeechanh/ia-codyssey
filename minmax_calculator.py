@@ -2,6 +2,11 @@ def main():
     try:
         # 사용자로부터 입력을 받고 공백 기준으로 나눔
         numbers = input("Enter numbers separated by spaces: ").split()
+        
+        if not numbers or all(num.strip() == "" for num in numbers):
+            print("Invalid input.")
+            return
+
 
         # 문자열을 실수(float)로 변환
         float_numbers = [float(num) for num in numbers]
